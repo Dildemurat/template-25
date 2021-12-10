@@ -1,0 +1,16 @@
+html,body {
+    margin: 0;
+}
+* {
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+    @media screen and(max-width:1150px) {
+        padding: 0 10px;
+        
+    }
+    
+}
