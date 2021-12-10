@@ -36,6 +36,7 @@
 .header{
     background: url(../img/bg.webp) center center / cover;
     min-height: 100vh;
+    box-shadow: 0px 10px 8px 0px #0000001a;
     @media screen and(max-width:992px){
      max-width:100vm; 
      min-height: 50vh  
@@ -73,7 +74,8 @@
 .content__title{
     margin-top: 250px;
     font-size: 60px;
-    color: #fff;
+    color: #ffffff;
+    font-weight: 300;
     text-align: left;
 
     @media screen and (max-width: 992px) {
@@ -107,8 +109,9 @@
 }
 
 .content__text{
-    color: #fff;
     font-size: 13px;
+    color: #ffffff;
+    font-weight: 400;
     text-align: left;
     max-width: 440px;
     
@@ -136,6 +139,7 @@
 }
 
 .info__flex{
+    font-weight: 400;
     font-size: 14px;
     display: flex;
     gap: 60px;
@@ -149,9 +153,10 @@
 }
 
 .info__title{
-    color: #5d6060;
-    margin-top: 110px;
     font-size: 35px;
+    color: #222626;
+    font-weight: 300;
+    margin-top: 110px;
 
     @media screen and (max-width: 992px) {
         margin-top: 40px;
@@ -239,6 +244,8 @@
 }
 
 .block__link{
+    font-size: 14px;
+    font-weight: 700;
     text-decoration: none;
     color: #ffffff;
     
@@ -249,8 +256,9 @@
 }
 
 .block__title{
+    font-weight: 300;
     font-size: 30px;
-    color: #c4c3cf;
+    color: #ffffff;
 
     @media screen and(max-width:400px){
         text-align: center;
@@ -260,18 +268,30 @@
 }
 
 .block__text{
-    color: #d8d7df;
+    font-size: 13px;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 400;
 
     @media screen and(max-width:400px){
         text-align: center;
-        font-size: 15px;
+        font-size: 11px;
         
     }
 }
 
 .block__text4{
-    color: #d8d7df;
     max-width: 440px;
+    font-size: 13px;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 400;
+
+    @media screen and(max-width:400px){
+        text-align: center;
+        font-size: 11px;
+        
+    }
 }
 
 .icon{
@@ -304,6 +324,7 @@
 
 .details__title{
     color: #222626;
+    font-weight: 300;
     font-size: 35px;
 
     @media screen and(max-width:400px){
@@ -315,11 +336,13 @@
 
 .detail__title{
     color: #67676d;
+    font-weight: 600;
     font-size: 13px;
 }
 .detail__text{
-    color: #cecece;
-    font-style: 14px;
+    font-size: 14px;
+    color: #959595;
+    font-weight: 400;;
 }
 
 .container3{
