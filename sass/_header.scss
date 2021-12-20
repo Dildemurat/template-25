@@ -29,20 +29,20 @@
     }
 }
 .header{
-    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(../img/bg.webp) center center / cover;
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../img/bg.webp) center center / cover;
     min-height: 100vh;
     box-shadow: 0px 10px 8px 0px #0000001a;
 
     @media screen and(max-width:1024px){
-     max: width 50%; 
+     max-width: 100%; 
      min-height: 50vh  
     }
     @media screen and(max-width:768px){
-        max-height: 30%; 
+        max-width: 100%; 
         min-height: 30vh;
     }
     @media screen and(max-width:585px){
-        max-height: 20%; 
+        max-width: 100%; 
         min-height: 20vh;
     }
 }
@@ -422,6 +422,7 @@
     }
 }
 .title{
+    margin-top: 0;
     padding-top: 120px;
     padding-bottom: 70px;
     font-size: 35px;
@@ -474,37 +475,69 @@
     padding-bottom: 200px;
 
     @media screen and (max-width: 768px){
-        gap: 30px;
-        padding-bottom: 150px;
-    }
-    @media screen and (max-width: 640px){
-        grid-template-columns:1fr;
-        padding-bottom: 100px;
+        grid-template-columns: 1fr;
+        margin: 0 auto;
     }
 }
+.grid-item {
+    padding: 45px 50px ;
+    padding-bottom: 55px; 
+    border-radius: 8px;
+    box-shadow: 0 0 20px var(--shadow, transparent );
+}
+.grid-item:hover{
+    --shadow: rgba(177, 165, 165, 0.3);
+    transition: 1s;
+}
+.grid__block9{
+    margin-top: 150px;
+    max-width: 570px;
+
+    &:hover .grid__btn{
+        background-color: #bd8bbf;
+        transition: 1s;
+    }
+
+    @media screen and (max-width: 768px){
+        margin-top: 100px;
+        margin: 100px auto 0;
+    }
+    @media screen and (max-width: 640px){
+        padding-bottom: 50px;
+    }
+}
+.grid__block10{
+    margin-top: 150px;
+    max-width: 570px;
+
+    &:hover .grid__btn{
+        background-color: #bd8bbf;
+        transition: 1s;
+    }
+
+    @media screen and (max-width: 768px){
+        margin-top: 50px;
+        margin: 50px auto 0;
+    }
+    @media screen and (max-width: 640px){
+        margin-top: 20px;
+        margin: 20 auto 0;
+    }
+}
+
 .block__title2{
     font-size: 30px;
     color: #2e3b4e;
     font-weight: 300;
-
-    @media screen and(max-width:400px){
-        text-align: center;
-        font-size: 25px;
-    }
 }
 .block__text2{
     max-width: 410px;
     font-size: 14px;
     color: #8297a7;
     font-weight: 400;
-
-    @media screen and(max-width:400px){
-        font-size: 11px;
-        max-width: 310px;
-    }
 }
 .grid__btn{
-    margin-top: 150px;
+    cursor: pointer;
     border-radius: 5px;
     font-size: 11px;
     color: #ffffff;
@@ -513,19 +546,9 @@
     background-color: #e1e1e1;
     border: 1px #e1e1e1;
     padding: 7px 18px;
-
-    @media screen and(max-width:768px){
-        font-size: 9px;
-        margin-top: 100px;
-        padding: 6px 15px;
-    }
-    @media screen and(max-width:400px){
-        font-size: 7px;
-        margin-top: 50px;
-        padding: 5px 13px;
-    }
 }
 .grid__btn2{
+    cursor: pointer;
     margin-top: 30px;
     border-radius: 3px;
     font-size: 13px;
@@ -535,16 +558,23 @@
     background-color: #82ca9c;
     border: 1px #82ca9c;
     padding: 17px 30px;
-
-    @media screen and(max-width:768px){
-        font-size:11px;
-        margin-top: 25px;
-        padding: 14px 25px;
+    &:active{
+        background-color: green;
     }
-    @media screen and(max-width:400px){
-        font-size: 9px;
-        margin-top: 15px;
-        padding: 12px 22px;
+}
+.grid__btn3{
+    cursor: pointer;
+    margin-top: 45px;
+    border-radius: 3px;
+    font-size: 13px;
+    color: #ffffff;
+    font-weight: 700;
+    text-align: center;
+    background-color: #82ca9c;
+    border: 1px #82ca9c;
+    padding: 17px 30px;
+    &:active{
+        background-color: green;
     }
 }
 .icon2{
@@ -556,22 +586,62 @@
 .grid__icon{
     margin-left: 5px;
 }
-
-
 .grid__container5{
     display: grid;
     grid-template-columns:1fr 1fr 1fr;
     padding-bottom: 155px;
+
+    @media screen and (max-width: 768px){
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    @media screen and (max-width: 768px){
+        display: block;
+    }
 }
 .fuctions{
     display: flex;
-    gap: 170px;
+    gap: 130px;
+
+    @media screen and (max-width: 768px){
+        gap: 100px;
+    }
+    @media screen and (max-width: 620px){
+        display: block;
+    }
 }
 .bottom__title{
     padding-top: 130px;
     font-size: 13px;
     color: #f6f7fa;
     font-weight: 600;
+
+    @media screen and (max-width: 768px){
+        text-align: center;
+    }
+}
+.grid__block11{
+    max-width: 105px;
+
+    @media screen and (max-width: 620px){
+        padding-top: 30px;
+        margin: 0 auto;
+    }
+}
+.grid__block12{
+    max-width: 105px;
+
+    @media screen and (max-width: 620px){
+        padding-top: 30px;
+        margin: 0 auto;
+    }
+}
+.grid__block13{
+    max-width: 105px;
+
+    @media screen and (max-width: 620px){
+        padding-top: 30px;
+        margin: 0 auto;
+    }
 }
 .bottom__text{
     max-width: 565px;
@@ -579,18 +649,44 @@
     color: #f6f7fa;
     font-weight: 400;
     padding-bottom: 75px;
+
+    @media screen and (max-width: 768px){
+        text-align: center;
+    }
+
+    @media screen and (max-width: 420px){
+        padding-bottom: 0;
+        max-width: 300px;
+    }
+}
+.fuctions2{
+
+    @media screen and (max-width: 620px){
+        
+    }
 }
 .bottom__title2{
     padding-top: 130px;
     font-size: 13px;
     color: #f6f7fa;
     font-weight: 600;
+
+    @media screen and (max-width: 620px){
+        padding-top: 0;
+    }
 }
 .bottom__text2{
     max-width: 335px;
     font-size: 12px;
     color: #57697f;
     font-weight: 400;
+    
+    @media screen and (max-width: 620px){
+        padding-bottom: 100px;
+    }
+    @media screen and (max-width: 420px){
+        max-width: 300px;
+    }
 }
 .block__title3{
     font-size: 13px;
@@ -605,6 +701,10 @@
     font-size: 13px;
     color: #f6f7fa;
     font-weight: 400;
+
+    @media screen and (max-width: 420px){
+        margin-top: 12px;
+    }
 }
 .block__link3{
     display: flex;
@@ -613,4 +713,46 @@
     font-size: 13px;
     color: #f6f7fa;
     font-weight: 400;
+}
+.input-group{
+    display: flex;
+}
+.btn-check{
+    cursor: pointer;
+    background: #82ca9c;
+    border: 3px solid #82ca9c;
+    border-radius: 2px;
+    height: 55px;
+    width: 70px;
+
+    &:active{
+        background-color: green;
+        border: 3px solid green;
+    }
+
+    @media screen and (max-width: 768px){
+        height: 45px;
+        width: 60px;
+    }
+    @media screen and (max-width: 450px){
+        height: 35px;
+        width:50px;
+    }
+
+}
+.form-control{
+    border: 1px #fff;
+    border-radius: 2px;
+    height: 55px;
+    width: 400px;
+
+
+    @media screen and (max-width: 650px){
+        height: 45px;
+        width: 300px;
+    }
+    @media screen and (max-width: 450px){
+        height: 35px;
+        width: 250px;
+    }
 }
