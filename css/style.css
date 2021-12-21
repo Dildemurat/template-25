@@ -57,6 +57,7 @@ html, body {
 }
 
 .bottom {
+  margin-top: 0;
   background-color: #192331;
 }
 
@@ -845,6 +846,7 @@ html, body {
 }
 
 .bottom__title {
+  margin-top: 0;
   padding-top: 130px;
   font-size: 13px;
   color: #f6f7fa;
@@ -900,12 +902,12 @@ html, body {
 }
 @media screen and (max-width: 420px) {
   .bottom__text {
-    padding-bottom: 0;
-    max-width: 300px;
+    max-width: none;
   }
 }
 
 .bottom__title2 {
+  margin-top: 0;
   padding-top: 130px;
   font-size: 13px;
   color: #f6f7fa;
@@ -966,6 +968,11 @@ html, body {
 
 .input-group {
   display: flex;
+}
+@media screen and (max-width: 450px) {
+  .input-group {
+    padding: auto;
+  }
 }
 
 .btn-check {
